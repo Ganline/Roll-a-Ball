@@ -39,10 +39,12 @@ public class DropManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if((player.transform.position.y < -10)&&(goal.isGoal = false))
-        {
+			if(goal.isGoal == false){
+				if(player.transform.position.y < -20)
+				{
 					PrintGameOver();
-        }
+				}
+			}else{}
 
         if(isGameOver && Input.GetMouseButton(0))
         {
