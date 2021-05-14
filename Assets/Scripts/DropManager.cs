@@ -40,7 +40,7 @@ public class DropManager : MonoBehaviour
     void Update()
     {
 			if(goal.isGoal == false){
-				if(player.transform.position.y < -20)
+				if(player.transform.position.y < -30)
 				{
 					PrintGameOver();
 				}
