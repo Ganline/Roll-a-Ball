@@ -16,6 +16,9 @@ public class DropManager : MonoBehaviour
 
 		private GoalManager goal;
 
+		//Y座標の値
+		private int yp = -50;
+
 
 
     // Start is called before the first frame update
@@ -40,7 +43,7 @@ public class DropManager : MonoBehaviour
     void Update()
     {
 			if(goal.isGoal == false){
-				if(player.transform.position.y < -50)
+				if(player.transform.position.y < yp)
 				{
 					PrintGameOver();
 				}
