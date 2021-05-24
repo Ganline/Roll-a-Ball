@@ -25,7 +25,7 @@ public class DropManager : MonoBehaviour
     void Start()
     {
 			//インスタンス生成
-      goal = gameObject.AddComponent<GoalManager>();
+      goal = this.gameObject.AddComponent<GoalManager>();
     }
 
 		public void PrintGameOver()
