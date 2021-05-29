@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
   }
 
   // Update is called once per frame
-  void Update()
+  void FixedUpdate()
   {
 		// カーソルキーの入力を取得
 		var moveHorizontal = Input.GetAxis("Horizontal");
