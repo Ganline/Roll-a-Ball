@@ -12,6 +12,7 @@ public class Movecylinder : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
+
 		rigid.MovePosition(new Vector3(defaultPos.x + Mathf.PingPong(Time.time * 2, 4) , defaultPos.y , defaultPos.z));
 	}
 }
