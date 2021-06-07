@@ -7,7 +7,7 @@ public class GameSelectButton : MonoBehaviour
 {
     public void LoadingNewScene()
     {
-        SceneManager.LoadScene("Stage1");
+        SceneManager.LoadScene(this.gameObject.name);
     }
 }
 
