@@ -11989,12 +11989,27 @@ PrefabInstance:
     - target: {fileID: 6631138491153346658, guid: c320d292dad634ce0bdec086695e4ed4,
         type: 3}
       propertyPath: m_Name
-      value: Explosion system
+      value: ExplosionSystem
       objectReference: {fileID: 0}
     - target: {fileID: 6631138491153346661, guid: c320d292dad634ce0bdec086695e4ed4,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631138491153346661, guid: c320d292dad634ce0bdec086695e4ed4,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631138491153346661, guid: c320d292dad634ce0bdec086695e4ed4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631138491153346661, guid: c320d292dad634ce0bdec086695e4ed4,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6631138491153346661, guid: c320d292dad634ce0bdec086695e4ed4,
         type: 3}
@@ -12024,12 +12039,12 @@ PrefabInstance:
     - target: {fileID: 6631138491153346661, guid: c320d292dad634ce0bdec086695e4ed4,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6631138491153346661, guid: c320d292dad634ce0bdec086695e4ed4,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6631138491153346661, guid: c320d292dad634ce0bdec086695e4ed4,
         type: 3}

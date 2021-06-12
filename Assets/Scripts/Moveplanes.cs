@@ -1,17 +1,23 @@
 using UnityEngine;
 using System.Collections;
 
-public class Moveplanes : MonoBehaviour {
+public class Moveplanes : MonoBehaviour
+{
 
-	private Rigidbody rigid;
-	private Vector3 defaultPos;
+    private Rigidbody rigid;
+    private Vector3 defaultPos;
 
-	void Start () {
-		rigid = GetComponent<Rigidbody>();
-		defaultPos = transform.position;
-	}
+    [SerializeField] private float timespeed = 2;
+    [SerializeField] private float width = 3;
 
-	void FixedUpdate() {
-		rigid.MovePosition(new Vector3(defaultPos.x, defaultPos.y + Mathf.PingPong(Time.time * 2, 3), defaultPos.z));
-	}
+    void Start()
+    {
+        rigid = GetComponent<Rigidbody>();
+        defaultPos = transform.position;
+    }
+
+    void FixedUpdate()
+    {
+        rigid.MovePosition(new Vector3(defaultPos.x, defaultPos.y + Mathf.PingPong(Time.time * timespeed, width), defaultPos.z));
+    }
 }
