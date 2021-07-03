@@ -564,6 +564,7 @@ MonoBehaviour:
   timeText: {fileID: 0}
   goalText: {fileID: 1141153627}
   dropText: {fileID: 250727288}
+  joystick: {fileID: 8170153791750827916}
 --- !u!54 &314307268
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -883,6 +884,7 @@ RectTransform:
   m_Children:
   - {fileID: 1141153629}
   - {fileID: 250727290}
+  - {fileID: 8170153791750827913}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37258,6 +37260,125 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe53ab260d12845d1ad6a86ed042af4d, type: 3}
+--- !u!1001 &7341541793460148963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 431995171}
+    m_Modifications:
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1320
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 730
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1477271710607488363, guid: ecc78551eda2f4018947cf2efe9fd505,
+        type: 3}
+      propertyPath: m_Name
+      value: Floating Joystick
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ecc78551eda2f4018947cf2efe9fd505, type: 3}
 --- !u!1001 &8100863461951549260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37327,3 +37448,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 070d1297685c64c439633f1619d3c726, type: 3}
+--- !u!224 &8170153791750827913 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1477271710607488362, guid: ecc78551eda2f4018947cf2efe9fd505,
+    type: 3}
+  m_PrefabInstance: {fileID: 7341541793460148963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8170153791750827916 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1477271710607488367, guid: ecc78551eda2f4018947cf2efe9fd505,
+    type: 3}
+  m_PrefabInstance: {fileID: 7341541793460148963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
