@@ -33,8 +33,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // カーソルキーの入力を取得
-        Vector3 direction = Vector3.forward * joystick.Vertical + Vector3.right * joystick.Horizontal;
+        // カメラの方向を取得
+        var cameraForward = Vector3.Scale(Camera.main.transform.forward, new Vector3(1, 0, 1)).normalized;
+        //ジョイスティックからの入力を取得
+        Vector3 direction = cameraForward * joystick.Vertical + Camera.main.transform.right * joystick.Horizontal;
         rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
 
         //タイムアタック
