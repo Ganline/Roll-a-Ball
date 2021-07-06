@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3450786215130766027}
   - component: {fileID: 3450786215130766004}
   - component: {fileID: 3450786215130766031}
-  - component: {fileID: 3450786215130766024}
   - component: {fileID: 3450786215130766030}
+  - component: {fileID: 1425128055}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3450786215130766005}
-  m_LocalRotation: {x: 0, y: 1e-45, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -112,22 +112,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3450786215130766024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3450786215130766005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dc921506013b48ecb89a5bccb35a9a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 25
-  timeText: {fileID: 0}
-  goalText: {fileID: 0}
-  dropText: {fileID: 0}
 --- !u!114 &3450786215130766030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +146,21 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1425128055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450786215130766005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc921506013b48ecb89a5bccb35a9a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 25
+  timeText: {fileID: 0}
+  goalText: {fileID: 0}
+  dropText: {fileID: 0}
+  joystick: {fileID: 0}
+  goal: {fileID: 0}

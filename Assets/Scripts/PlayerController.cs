@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb; // Rididbody
     private float time; //　タイムアタック用
-    private GoalManager goal; //goalmanagerを呼び出す
-                              // Start is called before the first frame update
+    [SerializeField] private GoalManager goal; //goalmanagerを呼び出す
+                                               // Start is called before the first frame update
     void Start()
     {
 
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         goalText.text = "";
         dropText.text = "";
         //インスタンス生成
-        goal = gameObject.AddComponent<GoalManager>();
+        //goal = gameObject.AddComponent<GoalManager>();
     }
 
     // Update is called once per frame
