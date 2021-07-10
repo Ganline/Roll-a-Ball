@@ -14,19 +14,21 @@ public class GoalManager : MonoBehaviour
     //Goalしたかどうか判定する
     public bool isGoal = false;
 
+    int num;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        num = SceneManager.GetActiveScene().buildIndex;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Goalした後で画面をクリックされたとき
-        if(isGoal && Input.GetMouseButton(0))
+        if (isGoal && Input.GetMouseButton(0))
         {
-            Restart();
+            Nextstart();
         }
     }
 
@@ -34,7 +36,7 @@ public class GoalManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //当たってきたオブジェクトがボールだったとき
-        if(other.name == player.name)
+        if (other.name == player.name)
         {
             //テキストの内容を変更する
             text.GetComponent<Text>().text = "Goal!!!\n画面クリックで再スタート";
@@ -47,11 +49,11 @@ public class GoalManager : MonoBehaviour
     }
 
     //シーンを再読み込みする
-    private void Restart()
+    private void Nextstart()
     {
-        // 現在のScene名を取得する
-        Scene loadScene = SceneManager.GetActiveScene();
-        // Sceneの読み直し
-        SceneManager.LoadScene(loadScene.name);
+        // 次のSceneのビルド番号を取得する
+        num += 1;
+        // 次のSceneの読み込み
+        SceneManager.LoadScene(num);
     }
 }
