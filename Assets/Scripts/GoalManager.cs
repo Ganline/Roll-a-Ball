@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Advertisements;
 
 public class GoalManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class GoalManager : MonoBehaviour
     public GameObject player;
     //テキストを格納するための変数
     public GameObject text;
+
+    //広告用
+    Adtest ad;
 
     //Goalしたかどうか判定する
     public bool isGoal = false;
@@ -19,6 +23,7 @@ public class GoalManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ad = GameObject.Find("Ad").GetComponent<Adtest>();
         num = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -28,7 +33,13 @@ public class GoalManager : MonoBehaviour
         //Goalした後で画面をクリックされたとき
         if (isGoal && Input.GetMouseButton(0))
         {
+            OnGUI();
+        }
+        //Goalした後で画面をクリックされたとき
+        if (ad.isFin)
+        {
             Nextstart();
+            ad.isFin = false;
         }
     }
 
@@ -55,5 +66,18 @@ public class GoalManager : MonoBehaviour
         num += 1;
         // 次のSceneの読み込み
         SceneManager.LoadScene(num);
+    }
+    private void OnGUI()
+    {
+        var options = new[]
+        {
+            GUILayout.Width( Screen.width ),
+            GUILayout.Height( Screen.height),
+        };
+        if (isGoal == true)
+        {
+            ad.ShowRewardedAd();
+        }
+        GUILayout.Label(ad.m_result);
     }
 }
