@@ -12,8 +12,10 @@ public class GoalManager : MonoBehaviour
     //テキストを格納するための変数
     public GameObject text;
 
+    public AudioClip goalsound;
+
     //広告用
-    Adtest ad;
+    //Adtest ad;
 
     //Goalしたかどうか判定する
     public bool isGoal = false;
@@ -23,8 +25,9 @@ public class GoalManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ad = GameObject.Find("Ad").GetComponent<Adtest>();
+        //ad = GameObject.Find("Ad").GetComponent<Adtest>();
         num = SceneManager.GetActiveScene().buildIndex;
+        text.SetActive(false);
     }
 
     // Update is called once per frame
@@ -33,14 +36,15 @@ public class GoalManager : MonoBehaviour
         //Goalした後で画面をクリックされたとき
         if (isGoal && Input.GetMouseButton(0))
         {
-            OnGUI();
+            //OnGUI();
+            Nextstart();
         }
-        //Goalした後で画面をクリックされたとき
-        if (ad.isFin)
+
+        /*if (ad.isFin)
         {
             Nextstart();
             ad.isFin = false;
-        }
+        }*/
     }
 
     //当たり判定関数
@@ -56,6 +60,8 @@ public class GoalManager : MonoBehaviour
 
             //Goal判定をTrueにする
             isGoal = true;
+
+            AudioSource.PlayClipAtPoint(goalsound, transform.position);
         }
     }
 
@@ -67,7 +73,7 @@ public class GoalManager : MonoBehaviour
         // 次のSceneの読み込み
         SceneManager.LoadScene(num);
     }
-    private void OnGUI()
+    /*private void OnGUI()
     {
         var options = new[]
         {
@@ -78,6 +84,6 @@ public class GoalManager : MonoBehaviour
         {
             ad.ShowRewardedAd();
         }
-        GUILayout.Label(ad.m_result);
-    }
+
+    }*/
 }

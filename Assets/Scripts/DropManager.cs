@@ -14,12 +14,15 @@ public class DropManager : MonoBehaviour
 
     private bool isGameOver = false;
 
+    public AudioClip dropsound;
+
+    Adtest ad;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        ad = GameObject.Find("Ad").GetComponent<Adtest>();
     }
 
     public void PrintGameOver()
@@ -37,6 +40,7 @@ public class DropManager : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            AudioSource.PlayClipAtPoint(dropsound, player.transform.position);
             PrintGameOver();
         }
     }
@@ -44,10 +48,15 @@ public class DropManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (isGameOver && Input.GetMouseButton(0))
         {
+            OnGUI();
+        }
+
+        if (ad.isFin)
+        {
             Restart();
+            ad.isFin = false;
         }
     }
 
@@ -64,5 +73,18 @@ public class DropManager : MonoBehaviour
     public bool IsGameOver()
     {
         return isGameOver;
+    }
+
+    private void OnGUI()
+    {
+        var options = new[]
+        {
+            GUILayout.Width( Screen.width ),
+            GUILayout.Height( Screen.height),
+        };
+        if (isGameOver && Input.GetMouseButton(0))
+        {
+            ad.ShowRewardedAd();
+        }
     }
 }
