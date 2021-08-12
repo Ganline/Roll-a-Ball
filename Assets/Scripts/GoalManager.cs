@@ -62,6 +62,11 @@ public class GoalManager : MonoBehaviour
             isGoal = true;
 
             AudioSource.PlayClipAtPoint(goalsound, transform.position);
+
+            //ステージ解放用の値
+            PlayerPrefs.SetInt("GoalCount", 1);
+            //PlayerPrefsをセーブする         
+            PlayerPrefs.Save();
         }
     }
 
