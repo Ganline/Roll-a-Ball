@@ -264,8 +264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1472556159}
-  stage_num: 0
 --- !u!1 &58143703
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +581,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100418541}
   m_CullTransparentMesh: 0
+--- !u!1 &113822440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113822441}
+  - component: {fileID: 113822442}
+  m_Layer: 0
+  m_Name: TitleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &113822441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113822440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 581.5976, y: 238.8825, z: 656.3777}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &113822442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113822440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac993ddc4a80441faf99485e33f58cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openstages:
+  - {fileID: 494711402}
+  - {fileID: 2012582806}
+  - {fileID: 1815026852}
+  - {fileID: 1439878553}
+  - {fileID: 1496523214}
+  - {fileID: 622397346}
+  - {fileID: 1782364558}
+  - {fileID: 1472556159}
+  - {fileID: 514966891}
+  - {fileID: 824277690}
+  - {fileID: 1005727507}
+  - {fileID: 147142020}
+  - {fileID: 1692966872}
+  - {fileID: 1094754622}
+  - {fileID: 2069710025}
+  - {fileID: 589546889}
+  - {fileID: 784884847}
+  - {fileID: 514641917}
+  - {fileID: 1533244854}
 --- !u!1 &141512924
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +734,6 @@ GameObject:
   - component: {fileID: 147142025}
   - component: {fileID: 147142024}
   - component: {fileID: 147142023}
-  - component: {fileID: 147142022}
   m_Layer: 5
   m_Name: Stage13 (1)
   m_TagString: Untagged
@@ -701,20 +761,6 @@ RectTransform:
   m_AnchoredPosition: {x: -26, y: -106}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &147142022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147142020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &147142023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,7 +804,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 147142022}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -949,8 +995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 494711402}
-  stage_num: 0
 --- !u!1 &182220262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,8 +1138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1496523214}
-  stage_num: 0
 --- !u!1 &239772511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,8 +1281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 514966891}
-  stage_num: 0
 --- !u!1 &250403897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,8 +1580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 784884847}
-  stage_num: 0
 --- !u!1 &350384924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,8 +1789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1094754622}
-  stage_num: 0
 --- !u!1 &370015829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,8 +1932,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1815026852}
-  stage_num: 0
 --- !u!1 &393670914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,8 +2075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 2012582806}
-  stage_num: 0
 --- !u!1 &438302947
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,7 +2451,6 @@ GameObject:
   - component: {fileID: 514641922}
   - component: {fileID: 514641921}
   - component: {fileID: 514641920}
-  - component: {fileID: 514641919}
   m_Layer: 5
   m_Name: Stage19 (1)
   m_TagString: Untagged
@@ -2447,20 +2478,6 @@ RectTransform:
   m_AnchoredPosition: {x: 191, y: -292}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &514641919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514641917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &514641920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2504,7 +2521,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 514641919}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -2564,7 +2581,6 @@ GameObject:
   - component: {fileID: 514966896}
   - component: {fileID: 514966895}
   - component: {fileID: 514966894}
-  - component: {fileID: 514966893}
   m_Layer: 5
   m_Name: Stage10 (1)
   m_TagString: Untagged
@@ -2592,20 +2608,6 @@ RectTransform:
   m_AnchoredPosition: {x: 422, y: 87}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &514966893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514966891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &514966894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2649,7 +2651,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 514966893}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -2918,8 +2920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 514641917}
-  stage_num: 0
 --- !u!1 &561315275
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,7 +3088,6 @@ GameObject:
   - component: {fileID: 589546894}
   - component: {fileID: 589546893}
   - component: {fileID: 589546892}
-  - component: {fileID: 589546891}
   m_Layer: 5
   m_Name: Stage17 (1)
   m_TagString: Untagged
@@ -3116,20 +3115,6 @@ RectTransform:
   m_AnchoredPosition: {x: -243, y: -292}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &589546891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589546889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &589546892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3173,7 +3158,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 589546891}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -3311,7 +3296,6 @@ GameObject:
   - component: {fileID: 622397351}
   - component: {fileID: 622397350}
   - component: {fileID: 622397349}
-  - component: {fileID: 622397348}
   m_Layer: 5
   m_Name: Stage7 (1)
   m_TagString: Untagged
@@ -3339,20 +3323,6 @@ RectTransform:
   m_AnchoredPosition: {x: -243, y: 87}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &622397348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622397346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &622397349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3396,7 +3366,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 622397348}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -3821,8 +3791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 622397346}
-  stage_num: 0
 --- !u!1 &705575931
 GameObject:
   m_ObjectHideFlags: 0
@@ -3991,7 +3959,6 @@ GameObject:
   - component: {fileID: 784884852}
   - component: {fileID: 784884851}
   - component: {fileID: 784884850}
-  - component: {fileID: 784884849}
   m_Layer: 5
   m_Name: Stage18 (1)
   m_TagString: Untagged
@@ -4019,20 +3986,6 @@ RectTransform:
   m_AnchoredPosition: {x: -26, y: -292}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &784884849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784884847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &784884850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4076,7 +4029,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 784884849}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -4345,8 +4298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 2069710025}
-  stage_num: 0
 --- !u!1 &824277690
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,7 +4310,6 @@ GameObject:
   - component: {fileID: 824277695}
   - component: {fileID: 824277694}
   - component: {fileID: 824277693}
-  - component: {fileID: 824277692}
   m_Layer: 5
   m_Name: Stage11 (1)
   m_TagString: Untagged
@@ -4387,20 +4337,6 @@ RectTransform:
   m_AnchoredPosition: {x: -454, y: -106}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &824277692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824277690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &824277693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4444,7 +4380,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 824277692}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -4798,7 +4734,6 @@ GameObject:
   - component: {fileID: 1005727512}
   - component: {fileID: 1005727511}
   - component: {fileID: 1005727510}
-  - component: {fileID: 1005727509}
   m_Layer: 5
   m_Name: Stage12 (1)
   m_TagString: Untagged
@@ -4826,20 +4761,6 @@ RectTransform:
   m_AnchoredPosition: {x: -243, y: -106}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1005727509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005727507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1005727510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4883,7 +4804,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1005727509}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -4943,7 +4864,6 @@ GameObject:
   - component: {fileID: 1094754627}
   - component: {fileID: 1094754626}
   - component: {fileID: 1094754625}
-  - component: {fileID: 1094754624}
   m_Layer: 5
   m_Name: Stage15 (1)
   m_TagString: Untagged
@@ -4971,20 +4891,6 @@ RectTransform:
   m_AnchoredPosition: {x: 422, y: -106}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1094754624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094754622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1094754625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5028,7 +4934,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1094754624}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -5219,8 +5125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1782364558}
-  stage_num: 0
 --- !u!1 &1108584579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5676,8 +5580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 589546889}
-  stage_num: 0
 --- !u!1 &1209842129
 GameObject:
   m_ObjectHideFlags: 0
@@ -5973,8 +5875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1439878553}
-  stage_num: 0
 --- !u!1 &1267438694
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,8 +6096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 824277690}
-  stage_num: 0
 --- !u!1 &1374161770
 GameObject:
   m_ObjectHideFlags: 0
@@ -6341,8 +6239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 147142020}
-  stage_num: 0
 --- !u!1 &1384005048
 GameObject:
   m_ObjectHideFlags: 0
@@ -6511,7 +6407,6 @@ GameObject:
   - component: {fileID: 1439878558}
   - component: {fileID: 1439878557}
   - component: {fileID: 1439878556}
-  - component: {fileID: 1439878555}
   m_Layer: 5
   m_Name: Stage5 (1)
   m_TagString: Untagged
@@ -6539,20 +6434,6 @@ RectTransform:
   m_AnchoredPosition: {x: 422, y: 265}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1439878555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439878553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1439878556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6596,7 +6477,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1439878555}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -6734,7 +6615,6 @@ GameObject:
   - component: {fileID: 1472556164}
   - component: {fileID: 1472556163}
   - component: {fileID: 1472556162}
-  - component: {fileID: 1472556161}
   m_Layer: 5
   m_Name: Stage9 (1)
   m_TagString: Untagged
@@ -6762,20 +6642,6 @@ RectTransform:
   m_AnchoredPosition: {x: 190.99994, y: 87}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1472556161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472556159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1472556162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6819,7 +6685,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1472556161}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -6879,7 +6745,6 @@ GameObject:
   - component: {fileID: 1496523219}
   - component: {fileID: 1496523218}
   - component: {fileID: 1496523217}
-  - component: {fileID: 1496523216}
   m_Layer: 5
   m_Name: Stage6 (1)
   m_TagString: Untagged
@@ -6907,20 +6772,6 @@ RectTransform:
   m_AnchoredPosition: {x: -454, y: 87}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1496523216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496523214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1496523217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6964,7 +6815,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1496523216}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -7024,7 +6875,6 @@ GameObject:
   - component: {fileID: 1533244859}
   - component: {fileID: 1533244858}
   - component: {fileID: 1533244857}
-  - component: {fileID: 1533244856}
   m_Layer: 5
   m_Name: Stage20 (1)
   m_TagString: Untagged
@@ -7052,20 +6902,6 @@ RectTransform:
   m_AnchoredPosition: {x: 422, y: -292}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1533244856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533244854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1533244857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7109,7 +6945,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1533244856}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -7378,8 +7214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1533244854}
-  stage_num: 0
 --- !u!1 &1692966872
 GameObject:
   m_ObjectHideFlags: 0
@@ -7392,7 +7226,6 @@ GameObject:
   - component: {fileID: 1692966877}
   - component: {fileID: 1692966876}
   - component: {fileID: 1692966875}
-  - component: {fileID: 1692966874}
   m_Layer: 5
   m_Name: Stage14 (1)
   m_TagString: Untagged
@@ -7420,20 +7253,6 @@ RectTransform:
   m_AnchoredPosition: {x: 190.99994, y: -106}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1692966874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692966872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1692966875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7477,7 +7296,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1692966874}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -7771,7 +7590,6 @@ GameObject:
   - component: {fileID: 1782364563}
   - component: {fileID: 1782364562}
   - component: {fileID: 1782364561}
-  - component: {fileID: 1782364560}
   m_Layer: 5
   m_Name: Stage8 (1)
   m_TagString: Untagged
@@ -7799,20 +7617,6 @@ RectTransform:
   m_AnchoredPosition: {x: -26, y: 87}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1782364560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782364558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1782364561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7856,7 +7660,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1782364560}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -7916,7 +7720,6 @@ GameObject:
   - component: {fileID: 1815026857}
   - component: {fileID: 1815026856}
   - component: {fileID: 1815026855}
-  - component: {fileID: 1815026854}
   m_Layer: 5
   m_Name: Stage4 (1)
   m_TagString: Untagged
@@ -7944,20 +7747,6 @@ RectTransform:
   m_AnchoredPosition: {x: 191, y: 265}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1815026854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815026852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &1815026855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8001,7 +7790,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1815026854}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -8478,8 +8267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1692966872}
-  stage_num: 0
 --- !u!1 &2069710025
 GameObject:
   m_ObjectHideFlags: 0
@@ -8492,7 +8279,6 @@ GameObject:
   - component: {fileID: 2069710030}
   - component: {fileID: 2069710029}
   - component: {fileID: 2069710028}
-  - component: {fileID: 2069710027}
   m_Layer: 5
   m_Name: Stage16 (1)
   m_TagString: Untagged
@@ -8520,20 +8306,6 @@ RectTransform:
   m_AnchoredPosition: {x: -454, y: -292}
   m_SizeDelta: {x: 105.319916, y: 92.46341}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2069710027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069710025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!114 &2069710028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8577,7 +8349,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2069710027}
+      - m_Target: {fileID: 0}
         m_MethodName: LoadingNewScene
         m_Mode: 1
         m_Arguments:
@@ -8768,8 +8540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 0}
-  stage_num: 0
 --- !u!1 &2119967803
 GameObject:
   m_ObjectHideFlags: 0
@@ -8913,8 +8683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c82b85b28f34052ab42dfe288c7af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nextbutton: {fileID: 1005727507}
-  stage_num: 0
 --- !u!1 &2120136738
 GameObject:
   m_ObjectHideFlags: 0

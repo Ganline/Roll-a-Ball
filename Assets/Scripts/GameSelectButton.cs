@@ -6,13 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class GameSelectButton : MonoBehaviour
 {
-    [SerializeField] private GameObject Nextbutton;
-
-    public int stage_num;
+    
 
     void Start()
     {
-        stage_num = PlayerPrefs.GetInt("GoalCount", 0);
+        
     }
     public void LoadingNewScene()
     {
@@ -20,12 +18,7 @@ public class GameSelectButton : MonoBehaviour
     }
     void Update()
     {
-        if(stage_num == 1){
-            Nextbutton.SetActive(false);
-        }
-        //初期化
-        PlayerPrefs.SetInt("GoalCount", 0);
-        PlayerPrefs.Save();
+       
     }
 }
 
