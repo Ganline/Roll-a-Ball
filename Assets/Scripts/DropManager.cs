@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 
 public class DropManager : MonoBehaviour
@@ -18,11 +19,14 @@ public class DropManager : MonoBehaviour
 
     Adtest ad;
 
+    int value = 0;
+
 
     // Start is called before the first frame update
     void Start()
     {
         ad = GameObject.Find("Ad").GetComponent<Adtest>();
+        
     }
 
     public void PrintGameOver()
@@ -31,9 +35,13 @@ public class DropManager : MonoBehaviour
         text.GetComponent<Text>().text = "GameOver...";
         text.SetActive(true);
 
-
+        value = new System.Random().Next(0, 10);
         //ゲームオーバー
         isGameOver = true;
+        if(value >= 5)
+        {
+            ad.isFin = true;
+        }
     }
 
     public void OnTriggerEnter(Collider col)
@@ -48,7 +56,7 @@ public class DropManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isGameOver && Input.GetMouseButton(0))
+        if (isGameOver && Input.GetMouseButton(0) && value < 5)
         {
             OnGUI();
         }
@@ -82,7 +90,7 @@ public class DropManager : MonoBehaviour
             GUILayout.Width( Screen.width ),
             GUILayout.Height( Screen.height),
         };
-        if (isGameOver && Input.GetMouseButton(0))
+        if (isGameOver && Input.GetMouseButton(0) && value < 5)
         {
             ad.ShowRewardedAd();
         }
