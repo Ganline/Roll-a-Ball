@@ -1218,7 +1218,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-84454
+  m_Name: pb_Mesh-221488
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2571,11 +2571,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1811203318}
-    - target: {fileID: 8958354872386025949, guid: b150b64a47d134237a9b966fb0b5ee74,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4190bd2c1ca0e9844a0cc93a84d083c1, type: 2}
     - target: {fileID: 8958354872386025950, guid: b150b64a47d134237a9b966fb0b5ee74,
         type: 3}
       propertyPath: m_Mesh
@@ -2586,11 +2581,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1811203318}
-    - target: {fileID: 8958354873170815304, guid: b150b64a47d134237a9b966fb0b5ee74,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4190bd2c1ca0e9844a0cc93a84d083c1, type: 2}
     - target: {fileID: 8958354873170815305, guid: b150b64a47d134237a9b966fb0b5ee74,
         type: 3}
       propertyPath: m_Mesh
@@ -3065,7 +3055,6 @@ MonoBehaviour:
   text: {fileID: 1233607621}
   goalsound: {fileID: 8300000, guid: a65f2285e78b34002af3619280a9a1c9, type: 3}
   isGoal: 0
-  goalcountmax: 0
 --- !u!4 &1940293254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5878155304707214216, guid: 4b6e2a57f821142578db2d035d1d67c9,

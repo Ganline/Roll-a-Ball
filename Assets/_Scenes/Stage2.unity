@@ -657,11 +657,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 290
       objectReference: {fileID: 0}
-    - target: {fileID: 3823305855644366582, guid: cac8a8327a87c4635924bdf2e4464c51,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cac8a8327a87c4635924bdf2e4464c51, type: 3}
 --- !u!4 &661371438 stripped
@@ -2058,10 +2053,6 @@ PrefabInstance:
       propertyPath: goal
       value: 
       objectReference: {fileID: 1433582514}
-    - target: {fileID: 1425128055, guid: 710b0b01da01045998264202baf2def4, type: 3}
-      propertyPath: speed
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 1425128055, guid: 710b0b01da01045998264202baf2def4, type: 3}
       propertyPath: dropText
       value: 
